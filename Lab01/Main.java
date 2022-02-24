@@ -9,8 +9,7 @@ public class Main {
         String[] languages = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
         
         //3.
-        double nn = Math.random()*1000000;
-        int n = (int)nn;
+        int n = (int)(Math.random()*1000000);
         System.out.println(n);
         
         //4.
