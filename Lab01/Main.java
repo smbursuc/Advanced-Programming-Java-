@@ -35,10 +35,6 @@ public class Main {
         System.out.println(n);
         
         //6.
-        System.out.print("Willy-nilly, this semester I will learn ");
-        for(String language : languages)
-        {
-        	System.out.print(language + " ");
-        }
+        System.out.print("Willy-nilly, this semester I will learn " + languages[n]);
     }
 }
