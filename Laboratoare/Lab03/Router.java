@@ -1,19 +1,19 @@
 
-public class Router extends Node{
+public class Router extends Node implements Identifiable{
 
-	private String adress;
+	private String address;
 	
 	public Router(String adress)
 	{
 		super(adress);
 	}
 
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String adress) {
+		this.address = adress;
 	}
 	
 	
