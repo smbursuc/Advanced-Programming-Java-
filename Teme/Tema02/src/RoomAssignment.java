@@ -42,6 +42,9 @@ public class RoomAssignment {
 		return raspuns;
 	}
 	
+	/*
+	 * Functie folosita pentru a previne adaugarea a unui eveniment/unei camere deja existente in problema.
+	 * */
 	public boolean contine(Object obj)
 	{
 		if(obj instanceof Event)

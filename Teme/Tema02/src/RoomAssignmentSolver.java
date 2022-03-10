@@ -3,8 +3,15 @@ import java.util.Collections;
 import java.util.Comparator;
 public class RoomAssignmentSolver {
 
-	private ArrayList<RoomAssignment> RAproblems; //vector in care sunt stocate toate problemele
-	private ArrayList<Pair<String,Integer>> occupiedUntil; //lista de pair-uri: staga - numele salii, dreapta - ora la care se termina activitatea din ea
+	/*
+	 * Vector in care sunt stocate toate problemele.
+	 * */
+	private ArrayList<RoomAssignment> RAproblems;
+	
+	/*
+	 * Lista de pair-uri: staga - numele salii, dreapta - ora la care se termina activitatea din ea. Foloseste clasa definita Pair.
+	 * */
+	private ArrayList<Pair<String,Integer>> occupiedUntil; //
 
 	public RoomAssignmentSolver() {
 		RAproblems = new ArrayList<>();
@@ -16,7 +23,10 @@ public class RoomAssignmentSolver {
 	}
 	
 	
-	public void showOccupiedUntil() //arata o lista in care in stanga se afla nr salii si in dreapta ora in care se termina activitatea prezenta in ea
+	/*
+	 * Arata o lista in care in stanga se afla nr salii si in dreapta ora in care se termina activitatea prezenta in ea.
+	 * */
+	public void showOccupiedUntil() //
 	{
 		for(int i=0;i<occupiedUntil.size();i++)
 		{
@@ -25,6 +35,16 @@ public class RoomAssignmentSolver {
 		System.out.println("");
 	}
 	
+	/**
+	 * Rezolvarea este una de tip Greedy.
+	 * Algoritmul functioneaza astfel:
+	 * 
+	 * - parcurgem toate instantele ale problemei stocate in clasa.
+	 * - pentru fiecare problema sortam evenimentele in ordinea in care se termina (cele care se termina cel mai devreme vor fi primele in lista)
+	 * - gasim camere candidate pentru evenimente (care nu au un eveniment cand in ele cand incepe evenimentul care itereaza)
+	 * - dintre camerele candidate alegem o camera care incape cel mai bine pentru un eveniment (nu se vor pune evenimente de 30 in sala de 100)
+	 * - afisam primul match gasit si reiteram
+	 * */
 	public void solve() {
 		
 		for (RoomAssignment ra : RAproblems)

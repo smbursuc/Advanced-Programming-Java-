@@ -14,6 +14,10 @@ public class Main {
 		ComputerLab cl3 = new ComputerLab("405", 30, OperatingSystem.Windows_10);
 		LectureHall lh4 = new LectureHall("309", 100, true);
 		
+		
+		/*
+		 * Clasa care stocheaza o problema de tip room assignment. Contine evenimentele si camerele.
+		 * */
 		RoomAssignment problem1 = new RoomAssignment(); //clasa care stocheaza o problema de tip room assignment
 		
 		problem1.add(C1);
@@ -26,6 +30,9 @@ public class Main {
 		problem1.add(cl3);
 		problem1.add(lh4);
 		
+		/*
+		 * Clasa care stocheaza instante ale problemei room assignment si le rezolva.
+		 * */
 		RoomAssignmentSolver s1 = new RoomAssignmentSolver(); //clasa care stocheaza instante ale problemei room assignment si le rezolva
 		s1.addProblem(problem1);
 		s1.solve();
