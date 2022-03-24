@@ -43,16 +43,26 @@ public class App
     		intersectionHashSet.add(intersections[i]);
     	}
     	
+    	for(Intersection intersection : intersectionHashSet)
+    	{
+    		System.out.println(intersection.getName());
+    	}
+    	
+    	for(Street street : streetList)
+    	{
+    		System.out.println(street.getName() + " " + street.getLength());
+    	}
+    	
     	City c1 = new City("New York");
     	c1.initializeLabExample();
     	
-    	List<Street> wantedStreets = new ArrayList<>(); //list made to avoid duplicates
+    	Set<Street> wantedStreets = new HashSet<>(); //list made to avoid duplicates
     	
     	c1.getStreets().stream()
-    	.filter(s -> s.getLength()==3)
+    	.filter(s -> s.getLength()>=3)
     	.forEach(s -> s.getAdjacentIntersections().stream()
-    	.filter(i -> i.getAdjacentStreets().size()==4)
-    	.forEach(str -> {if(!wantedStreets.contains(s)) wantedStreets.add(s);}));
+    	.filter(i -> i.getAdjacentStreets().size()==3)
+    	.forEach(str -> {wantedStreets.add(s);}));
     	
     	//.forEach(str -> System.out.println(s.getName()))); has duplicates
     	
