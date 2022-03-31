@@ -25,8 +25,9 @@ public class Main {
         saveCommand sc = new saveCommand(catalog1,"./Util/Catalog/catalog.json");
         sc.execute();
         
-        loadCommand ldc = new loadCommand("./Util/Catalog/catalog.json");
-        Catalog catalog2 = ldc.execute();
+        Catalog catalog2 = null;
+        loadCommand ldc = new loadCommand("./Util/Catalog/catalog.json", catalog2);
+        ldc.execute();
         System.out.println(catalog2);
         
         listCommand lstc = new listCommand(catalog1);

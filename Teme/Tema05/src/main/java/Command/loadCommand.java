@@ -11,19 +11,20 @@ import tema5.Catalog;
 import Exception.InvalidCatalogException;
 
 
-public class loadCommand {
+public class loadCommand implements Command{
 	
 	private String path;
+	private Catalog catalog;
 	
-	public loadCommand(String path)
+	public loadCommand(String path, Catalog catalog)
 	{
 		this.path=path;
+		this.catalog=catalog;
 	}
 	
-	public Catalog execute() throws StreamReadException, DatabindException, IOException, InvalidCatalogException {
+	public void execute() throws StreamReadException, DatabindException, IOException, InvalidCatalogException {
 		ObjectMapper objectMapper = new ObjectMapper();
-		Catalog catalog = objectMapper.readValue(new File(path), Catalog.class);
-		return catalog;
+		catalog = objectMapper.readValue(new File(path), Catalog.class);
 	}
 
 }
