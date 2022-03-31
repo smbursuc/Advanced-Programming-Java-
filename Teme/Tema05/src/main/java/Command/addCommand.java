@@ -4,9 +4,18 @@ import Exception.ItemAlreadyAdded;
 import tema5.Catalog;
 import tema5.Item;
 
-public class addCommand extends Command{
+public class addCommand implements Command{
 
-	public void addToCatalog(Catalog catalog, Item item) throws ItemAlreadyAdded
+	private Catalog catalog;
+	private Item item;
+	
+	public addCommand(Catalog catalog, Item item)
+	{
+		this.catalog=catalog;
+		this.item=item;
+	}
+	
+	public void execute() throws ItemAlreadyAdded
 	{
 		if(catalog.findById(item)==null)
 			catalog.getItems().add(item);

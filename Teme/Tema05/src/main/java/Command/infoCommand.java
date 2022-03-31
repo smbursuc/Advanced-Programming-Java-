@@ -14,9 +14,16 @@ import org.xml.sax.SAXException;
 
 import tema5.Item;
 
-public class infoCommand extends Command {
+public class infoCommand implements Command {
 
-	public void getMetaData(Item item) throws IOException, SAXException, TikaException {
+	private Item item;
+	
+	public infoCommand(Item item)
+	{
+		this.item=item;
+	}
+	
+	public void execute() throws IOException, SAXException, TikaException {
 		File file = new File(item.getLocation());
 
 		// parameters of parse() method

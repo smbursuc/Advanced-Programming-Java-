@@ -19,9 +19,16 @@ import freemarker.template.TemplateExceptionHandler;
 import tema5.Catalog;
 
 
-public class reportCommand extends Command{
+public class reportCommand implements Command{
 
-	public void generateReport(Catalog catalog) throws IOException, TemplateException
+	private Catalog catalog;
+	
+	public reportCommand(Catalog catalog)
+	{
+		this.catalog=catalog;
+	}
+	
+	public void execute() throws IOException, TemplateException
 	{
 		Properties props = new Properties();
         props.load(new FileInputStream("./log4j.properties"));

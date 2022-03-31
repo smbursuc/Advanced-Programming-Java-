@@ -6,9 +6,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import tema5.Catalog;
 
-public class saveCommand extends Command{
+public class saveCommand implements Command{
 	
-	public void save(Catalog catalog, String path) throws IOException {
+	private Catalog catalog;
+	private String path;
+	
+	public saveCommand(Catalog catalog, String path)
+	{
+		this.catalog=catalog;
+		this.path=path;
+	}
+	
+	public void execute() throws IOException {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.writeValue(new File(path), catalog);

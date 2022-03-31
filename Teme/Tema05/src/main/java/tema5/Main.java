@@ -17,30 +17,30 @@ public class Main {
         Item item2 = new Article("120", "The Fellowship of the Ring" , ".\\Util\\Books\\metro.txt");
         Catalog catalog1 = new Catalog("Favorite Books");
         
-        addCommand ac = new addCommand();
-        ac.addToCatalog(catalog1, item1);
-        ac.addToCatalog(catalog1, item2);
+        addCommand ac1 = new addCommand(catalog1, item1);
+        ac1.execute();
+        addCommand ac2 = new addCommand(catalog1,item2);
+        ac2.execute();
         
-        saveCommand sc = new saveCommand();
-        sc.save(catalog1, "./Util/Catalog/catalog.json");
+        saveCommand sc = new saveCommand(catalog1,"./Util/Catalog/catalog.json");
+        sc.execute();
         
-        loadCommand ldc = new loadCommand();
-        Catalog catalog2 = ldc.load("./Util/Catalog/catalog.json");
+        loadCommand ldc = new loadCommand("./Util/Catalog/catalog.json");
+        Catalog catalog2 = ldc.execute();
         System.out.println(catalog2);
         
-        listCommand lstc = new listCommand();
-        lstc.listItems(catalog1);
+        listCommand lstc = new listCommand(catalog1);
+        lstc.execute();
         
-        viewCommand vc = new viewCommand();
-        vc.view(item2);
+        viewCommand vc = new viewCommand(item2);
+        vc.execute();
       
-        reportCommand rc = new reportCommand();
-        rc.generateReport(catalog1);
+        reportCommand rc = new reportCommand(catalog1);
+        rc.execute();
         
-        infoCommand ic = new infoCommand();
-        ic.getMetaData(item2);
+        infoCommand ic = new infoCommand(item2);
+        ic.execute();
         
-
 	}
 
 }

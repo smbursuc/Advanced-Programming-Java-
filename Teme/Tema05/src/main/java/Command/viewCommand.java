@@ -6,9 +6,16 @@ import java.io.IOException;
 
 import tema5.Item;
 
-public class viewCommand extends Command {
+public class viewCommand implements Command {
 
-	public void view(Item item) throws IOException {
+	private Item item;
+	
+	public viewCommand(Item item)
+	{
+		this.item=item;
+	}
+	
+	public void execute() throws IOException {
 		Desktop desktop = Desktop.getDesktop();
 		File folder = new File(item.getLocation());
 		desktop.open(folder);

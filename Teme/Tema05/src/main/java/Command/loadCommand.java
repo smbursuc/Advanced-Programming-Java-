@@ -13,7 +13,14 @@ import Exception.InvalidCatalogException;
 
 public class loadCommand {
 	
-	public Catalog load(String path) throws StreamReadException, DatabindException, IOException, InvalidCatalogException {
+	private String path;
+	
+	public loadCommand(String path)
+	{
+		this.path=path;
+	}
+	
+	public Catalog execute() throws StreamReadException, DatabindException, IOException, InvalidCatalogException {
 		ObjectMapper objectMapper = new ObjectMapper();
 		Catalog catalog = objectMapper.readValue(new File(path), Catalog.class);
 		return catalog;
