@@ -33,8 +33,8 @@ public class Game
 			new Thread(player).start();
 		}
 	}
-
-	public static void main(String args[])
+	
+	public static void main(String[] args)
 	{
 		Game game = new Game();
 		game.addPlayer(new Player("Player 1"));
@@ -42,4 +42,5 @@ public class Game
 		game.addPlayer(new Player("Player 3"));
 		game.play();
 	}
+
 }

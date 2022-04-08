@@ -16,13 +16,14 @@ public class Bag
 		// 97-122 a-z
 		Random random = new Random();
 		tiles = new ArrayList<>();
-		tileNumber = 20 + random.nextInt(50);
+		tileNumber = 10;
 
-		for (int i = 0; i < tileNumber; i++)
+		for (int i = 97; i <= 122; i++)
 		{
-			int asciiCode = 97 + random.nextInt(25);
-			int points = 1 + random.nextInt(20);
-			tiles.add(new Tile((char) asciiCode, points));
+			for(int j=0;j<tileNumber;j++)
+			{
+				tiles.add(new Tile((char) i,1+random.nextInt(10)));
+			}
 		}
 	}
 
@@ -32,7 +33,7 @@ public class Bag
 		Random random = new Random();
 		for (int i = 0; i < howMany; i++) 
 		{
-			int tilePosition = random.nextInt(tileNumber);
+			int tilePosition = random.nextInt(tiles.size()-1);
 			extracted.add(tiles.get(tilePosition));
 		}
 		return extracted;

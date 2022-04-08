@@ -18,13 +18,13 @@ public class Player implements Runnable
 	{
 		return name;
 	}
-	
+
 	public void setGame(Game game)
 	{
-		this.game=game;
+		this.game = game;
 	}
 
-	private boolean submitWord() 
+	private boolean submitWord() throws InterruptedException 
 	{
 		List<Tile> extracted = game.getBag().extractTiles(7);
 		if (extracted.isEmpty()) 
@@ -32,22 +32,37 @@ public class Player implements Runnable
 			return false;
 		}
 		//create a word with all the extracted tiles;
-		
 		Random random = new Random();
-		int wordCount = 1 + random.nextInt(10);
-		String word = null;
-		for(int i=0;i<wordCount;i++)
+		String word = "";
+		for(int i=0;i<extracted.size();i++)
 		{
 			int extractedIndex = random.nextInt(extracted.size());
-			word = word + extracted.get(extractedIndex);
+			word = word + extracted.get(extractedIndex).getLetter();
 		}
 		game.getBoard().addWord(this, word);
-		//make the player sleep 50ms;
+		
+
+		Thread.sleep(50);
+		
 		return true;
+
 	}
 
 	public void run()
 	{
-		
+		try
+		{
+			while(true)
+			{
+				submitWord();
+				Thread.sleep(1000);
+			}
+		} 
+		catch (InterruptedException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 }
