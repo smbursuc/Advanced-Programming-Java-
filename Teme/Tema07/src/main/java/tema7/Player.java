@@ -42,10 +42,6 @@ public class Player implements Runnable
 
 	private boolean submitWord() throws InterruptedException
 	{
-		if(game.getTimekeeper().getStop()==true)
-		{
-			return false;
-		}
 		if (game.getBag().getTiles().size() == 0)
 		{
 			System.out.println("Game over");
@@ -63,10 +59,10 @@ public class Player implements Runnable
 			for (Player player : game.getPlayers())
 			{
 				System.out.println(
-						player.getName() + " has " + game.getBoard().getPlayerPoints().get(player) + " points.???");
+						player.getName() + " has " + game.getBoard().getPlayerPoints().get(player) + " points.");
 			}
 
-			return false;
+			System.exit(-1);
 		}
 		List<Tile> partialExtract = game.getBag().extractTiles(extractionAmount);
 		
@@ -75,6 +71,11 @@ public class Player implements Runnable
 			extracted.add(tile);
 		}
 		
+		if (extracted.isEmpty())
+		{
+			return false;
+		}
+
 		// create a word with all the extracted tiles;
 		Random random = new Random();
 		int wordLength = 1 + random.nextInt(7);
@@ -92,6 +93,7 @@ public class Player implements Runnable
 			System.out.println(name + " couldn't find any words with the extraced tiles and word length.");
 			extractionAmount = 7;
 			extracted.removeAll(extracted);
+			return false;
 		}
 		else
 		{
@@ -157,9 +159,8 @@ public class Player implements Runnable
 		{
 			while (true)
 			{
-				if(!submitWord())
-					break;
-				else Thread.sleep(1000);
+				submitWord();
+				Thread.sleep(1000);
 			}
 		}
 		catch (InterruptedException e)

@@ -5,26 +5,19 @@ import java.util.concurrent.TimeUnit;
 public class Timekeeper implements Runnable
 {
 	
-	private boolean stop = false;
-	
 	public Timekeeper()
 	{
 	
 	}
 	
-	public boolean getStop()
-	{
-		return stop;
-	}
-	
 	public void run()
 	{
 		long start = System.currentTimeMillis();
-		long end = start + 3*1000; //
+		long end = start + 300*1000; //
 		while (System.currentTimeMillis() < end)
 		{
 			long seconds = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()-start);
-			System.out.println("Timeeee: " + seconds);
+			System.out.println("Time: " + seconds);
 			try
 			{
 				Thread.sleep(1000);
@@ -36,7 +29,7 @@ public class Timekeeper implements Runnable
 			}
 		}
 		System.out.println("Time's up");
-	    stop = true;
+	    System.exit(-1);
 	}
 
 }

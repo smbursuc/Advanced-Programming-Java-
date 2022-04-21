@@ -9,17 +9,11 @@ public class Game
 	private final Dictionary dictionary = new Dictionary();
 	private final Board board = new Board(dictionary, this);
 	private final List<Player> players = new ArrayList<>();
-	private Timekeeper timekeeper = new Timekeeper();
 
 	public void addPlayer(Player player)
 	{
 		players.add(player);
 		player.setGame(this);
-	}
-	
-	public Timekeeper getTimekeeper()
-	{
-		return timekeeper;
 	}
 	
 	public Bag getBag()
@@ -49,9 +43,9 @@ public class Game
 		{
 			new Thread(player).start();
 		}
-		Thread daemonThread = new Thread(new Timekeeper());
-		daemonThread.setDaemon(true);
-		daemonThread.start();
+		Thread thread = new Thread(new Timekeeper());
+		thread.setDaemon(true);
+		thread.start();
 	}
 	
 	public static void main(String[] args)
