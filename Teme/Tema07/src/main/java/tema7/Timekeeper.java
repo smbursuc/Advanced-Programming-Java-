@@ -13,7 +13,7 @@ public class Timekeeper implements Runnable
 	public void run()
 	{
 		long start = System.currentTimeMillis();
-		long end = start + 300*1000; //
+		long end = start + 120*1000; //
 		while (System.currentTimeMillis() < end)
 		{
 			long seconds = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()-start);

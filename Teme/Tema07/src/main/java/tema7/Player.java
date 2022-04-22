@@ -90,7 +90,7 @@ public class Player implements Runnable
 		
 		if(words.size()==0)
 		{
-			System.out.println(name + " couldn't find any words with the extraced tiles and word length.");
+			System.out.println(name + " couldn't find any words with the extraced tiles.");
 			extractionAmount = 7;
 			extracted.removeAll(extracted);
 			return false;
