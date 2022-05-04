@@ -45,6 +45,7 @@ public class Main extends Application{
 			continents.create("Asia", 1);
 			Database.getConnection().commit();
 			System.out.println(continents.findById(0));
+			System.out.println(continents.findAll());
 			
 			
 			CountryDAO countries = new CountryDAO();

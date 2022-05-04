@@ -43,5 +43,24 @@ public class ContinentDAO {
 			return result;
 		}
 	}
+	
+	public String findAll() throws SQLException {
+		Connection con = Database.getConnection();
+		try (Statement stmt = con.createStatement();
+				ResultSet rs = stmt.executeQuery("select * from continents")) {
+			String result = "";
+			if(!rs.next())
+			{
+				return null;
+			}
+			
+			while(rs.next())
+			{
+				result = result + rs.getString(2) + "\n";
+			}
+			
+			return result;
+		}
+	}
 
 }

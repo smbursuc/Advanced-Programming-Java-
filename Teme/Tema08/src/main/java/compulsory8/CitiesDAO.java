@@ -95,5 +95,24 @@ public class CitiesDAO {
 			
 		}
 	}
+	
+	public String findAll() throws SQLException {
+		Connection con = Database.getConnection();
+		try (Statement stmt = con.createStatement();
+				ResultSet rs = stmt.executeQuery("select * from cities")) {
+			String result = "";
+			if(!rs.next())
+			{
+				return null;
+			}
+			
+			while(rs.next())
+			{
+				result = result + rs.getString(3) + "\n";
+			}
+			
+			return result;
+		}
+	}
 
 }
