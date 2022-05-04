@@ -3,6 +3,11 @@ package compulsory8;
 import java.io.File;
 import java.sql.SQLException;
 
+import DAO.CitiesDAO;
+import DAO.ContinentDAO;
+import DAO.CountryDAO;
+import Util.CityDatasetReader;
+import Util.MercatorV2;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -39,26 +44,31 @@ public class Main extends Application{
 
 	public static void main(String args[]) {
 		try {
-			ContinentDAO continents = new ContinentDAO();
 			Database.createConnection();
+			Database.nukeDatabase();
+			ContinentDAO continents = new ContinentDAO();
 			continents.create("Europe", 0);
 			continents.create("Asia", 1);
-			Database.getConnection().commit();
 			System.out.println(continents.findById(0));
+			System.out.println(continents.findByName("Asia"));
 			System.out.println(continents.findAll());
+			Database.getConnection().commit();
 			
 			
 			CountryDAO countries = new CountryDAO();
-			countries.create("Romania", continents.findByName("Europe"));
-			countries.create("China", continents.findByName("Asia"));
+			countries.create("Romania", 0, "Europe", "RO");
+			countries.create("China", 1, "Asia", "CN");
 			Database.getConnection().commit();
-			System.out.println(countries.findById(0));
+			System.out.println(countries.findById(1));
 			System.out.println(countries.findByName("Romania"));
 			
 			cdr.readDataLineByLine("./concap.csv");
 			CitiesDAO cities = new CitiesDAO();
 			cities.addFromReader(cdr);
 			Database.getConnection().commit();
+			System.out.println(cities.findByName("Bucharest"));
+			System.out.println(cities.findById(1));
+			System.out.println(cities.findById(2));
 			Database.getConnection().close();
 		} catch (SQLException e) {
 			System.err.println(e);

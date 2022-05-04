@@ -1,77 +1,74 @@
-package compulsory8;
+package DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import Places.City;
+import Util.CityDatasetReader;
+import compulsory8.Database;
 
 public class CitiesDAO {
 
-	public void create(int id, String country, String name, int capital, float latitude, float longitude) throws SQLException {
+	public void create(int id, String country, String name, int capital, double latitude, double longitude) throws SQLException {
 		Connection con = Database.getConnection();
 		try (PreparedStatement pstmt = con.prepareStatement("insert into cities (id,country,name,capital,latitude,longitude) values (?,?,?,?,?,?)")) {
 			pstmt.setInt(1, id);
 			pstmt.setString(2, country);
 			pstmt.setString(3, name);
 			pstmt.setInt(4, capital);
-			pstmt.setFloat(5, latitude);
-			pstmt.setFloat(6, longitude);			
+			pstmt.setDouble(5, latitude);
+			pstmt.setDouble(6, longitude);			
 			pstmt.executeUpdate();
 		}
 	}
 
-	public String findByName(String name) throws SQLException {
+	public List<City> findByName(String name) throws SQLException {
 		Connection con = Database.getConnection();
 		try (Statement stmt = con.createStatement();
-				ResultSet rs = stmt.executeQuery("select id from cities where name='" + name + "'")) {
-			String result = "";
-			if(!rs.next())
-			{
-				return null;
-			}
+				ResultSet rs = stmt.executeQuery("select id,country,name,capital,latitude,longitude from cities where name='" + name + "'")) {
+			List<City> result = new ArrayList<>();
 			
 			while(rs.next())
 			{
-				result = result + rs.getString(1) + "\n";
+				City city = new City(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4),rs.getDouble(5),rs.getDouble(6));
+				result.add(city);
 			}
 			
 			return result;
 		}
 	}
 
-	public String findById(int id) throws SQLException {
+	public List<City> findById(int id) throws SQLException {
 		Connection con = Database.getConnection();
 		try (Statement stmt = con.createStatement();
-				ResultSet rs = stmt.executeQuery("select name from cities where id='" + id + "'")) {
-			String result = "";
-			if(!rs.next())
-			{
-				return null;
-			}
-			
+				ResultSet rs = stmt.executeQuery("select id,country,name,capital,latitude,longitude from cities where id='" + id + "'")) {
+			List<City> result = new ArrayList<>();
+
 			while(rs.next())
 			{
-				result = result + rs.getString(1) + "\n";
+				City city = new City(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4),rs.getDouble(5),rs.getDouble(6));
+				result.add(city);
 			}
 			
 			return result;
 		}
 	}
 	
-	public String findByCountry(String country) throws SQLException {
+	public List<City> findByCountry(String country) throws SQLException {
 		Connection con = Database.getConnection();
 		try (Statement stmt = con.createStatement();
-				ResultSet rs = stmt.executeQuery("select name from cities where country='" + country + "'")) {
-			String result = "";
-			if(!rs.next())
-			{
-				return null;
-			}
-			
+				ResultSet rs = stmt.executeQuery("select id,country,name,capital,latitude,longitude from cities where country='" + country + "'")) {
+			List<City> result = new ArrayList<>();
+
 			while(rs.next())
 			{
-				result = result + rs.getString(1) + "\n";
+				City city = new City(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4),rs.getDouble(5),rs.getDouble(6));
+				result.add(city);
 			}
 			
 			return result;
@@ -96,19 +93,16 @@ public class CitiesDAO {
 		}
 	}
 	
-	public String findAll() throws SQLException {
+	public List<City> findAll() throws SQLException {
 		Connection con = Database.getConnection();
 		try (Statement stmt = con.createStatement();
 				ResultSet rs = stmt.executeQuery("select * from cities")) {
-			String result = "";
-			if(!rs.next())
-			{
-				return null;
-			}
-			
+			List<City> result = new ArrayList<>();
+
 			while(rs.next())
 			{
-				result = result + rs.getString(3) + "\n";
+				City city = new City(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4),rs.getDouble(5),rs.getDouble(6));
+				result.add(city);
 			}
 			
 			return result;

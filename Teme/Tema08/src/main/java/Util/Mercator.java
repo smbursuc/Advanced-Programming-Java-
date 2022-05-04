@@ -1,4 +1,4 @@
-package compulsory8;
+package Util;
 
 abstract class Mercator 
 {

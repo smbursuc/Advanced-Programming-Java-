@@ -2,6 +2,7 @@ package compulsory8;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Database {
@@ -44,6 +45,23 @@ public class Database {
 			connection.rollback();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void nukeDatabase()
+	{
+		Connection con = Database.getConnection();
+		try 
+		{
+			PreparedStatement pstmt1 = con.prepareStatement("delete from cities");
+			PreparedStatement pstmt2 = con.prepareStatement("delete from cities");
+			PreparedStatement pstmt3 = con.prepareStatement("delete from cities");
+			pstmt1.executeUpdate();
+			pstmt2.executeUpdate();
+			pstmt3.executeUpdate();
+		} catch (SQLException e)
+		{
 			e.printStackTrace();
 		}
 	}

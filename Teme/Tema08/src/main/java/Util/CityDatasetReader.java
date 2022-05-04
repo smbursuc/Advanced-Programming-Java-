@@ -1,4 +1,4 @@
-package compulsory8;
+package Util;
 
 import java.io.FileReader;
 import java.util.List;
