@@ -46,6 +46,7 @@ public class Main extends Application{
 		try {
 			Database.createConnection();
 			Database.nukeDatabase();
+			Database.getConnection().commit();
 			ContinentDAO continents = new ContinentDAO();
 			continents.create("Europe", 0);
 			continents.create("Asia", 1);

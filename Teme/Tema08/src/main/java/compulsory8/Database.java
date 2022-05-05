@@ -55,8 +55,8 @@ public class Database {
 		try 
 		{
 			PreparedStatement pstmt1 = con.prepareStatement("delete from cities");
-			PreparedStatement pstmt2 = con.prepareStatement("delete from cities");
-			PreparedStatement pstmt3 = con.prepareStatement("delete from cities");
+			PreparedStatement pstmt2 = con.prepareStatement("delete from countries");
+			PreparedStatement pstmt3 = con.prepareStatement("delete from continents");
 			pstmt1.executeUpdate();
 			pstmt2.executeUpdate();
 			pstmt3.executeUpdate();
