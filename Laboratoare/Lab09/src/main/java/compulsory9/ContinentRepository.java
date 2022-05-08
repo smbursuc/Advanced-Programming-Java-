@@ -26,7 +26,7 @@ public class ContinentRepository
 
 	public List<Continent> findByName(String name)
 	{
-		return em.createNamedQuery("entity.City.findByName", Continent.class).setParameter("name", name).getResultList();
+		return em.createNamedQuery("entity.Continent.findByName", Continent.class).setParameter("name", name).getResultList();
 	}
 
 }

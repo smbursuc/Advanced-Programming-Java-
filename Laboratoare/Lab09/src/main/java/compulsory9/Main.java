@@ -8,10 +8,10 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		EntityManagerFactory emf = Manager.getEntityManagerFactory("default");
+		EntityManagerFactory emf = Manager.getEntityManagerFactory("compulsory9");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
-        Continent continent = new Continent(0,"test");
+        Continent continent = new Continent("test");
         em.persist(continent);
         Continent c = (Continent) em.createQuery(
                         "select e from Continent e where e.name='test'")

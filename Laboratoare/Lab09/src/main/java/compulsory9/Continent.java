@@ -14,38 +14,27 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "continents")
 @NamedQueries({
-    @NamedQuery(name = "entity.Continent.findAll",
+    @NamedQuery(name = "Continent.findAll",
             query = "select e from Continent e order by e.name"),
-    @NamedQuery(name = "entity.Continent.findById",
-            query = "select e from Continent e where e.id = :id"),
-    @NamedQuery(name = "entity.City.findByName",
+    @NamedQuery(name = "Continent.findByName",
             query = "select e from Continent e where e.name = :name"),
 })
 public class Continent implements Serializable
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "id")
-	@Column(name = "id")
-	private Integer id;
-
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "id")
 	@Column(name = "name")
 	private String name;
 	
-	public Continent(Integer id, String name)
+	public Continent()
+	{
+		
+	}
+	
+	public Continent(String name)
 	{
 		super();
-		this.id = id;
 		this.name = name;
-	}
-
-	public Integer getId()
-	{
-		return id;
-	}
-
-	public void setId(Integer id)
-	{
-		this.id = id;
 	}
 
 	public String getName()
@@ -61,7 +50,7 @@ public class Continent implements Serializable
 	@Override
 	public String toString()
 	{
-		return "Continent [id=" + id + ", name=" + name + "]";
+		return "Continent [name=" + name + "]";
 	}
 	
 	
