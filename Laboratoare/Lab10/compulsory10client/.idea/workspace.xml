@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63352391-b556-4ffe-9a48-ba996f656480" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bursucserban/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/bursucserban/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/ClientThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/test/java/org/bursucserban/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/ChocoSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/DataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CitiesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CitiesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/ContinentsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/ContinentsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CountriesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CountriesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/ContinentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/ContinentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CountryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29CcWQOMJ6ybCllAp9v56mi9o9N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/PA_Bursuc_Serban-Mihai_2E3/Laboratoare/Lab10/compulsory10server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.bursucserban.Client" />
+      <module name="compulsory10client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.bursucserban.Server" />
+      <module name="compulsory10server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../compulsory10server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63352391-b556-4ffe-9a48-ba996f656480" name="Changes" comment="" />
+      <created>1652620540488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652620540488</updated>
+      <workItem from="1652620541761" duration="3150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

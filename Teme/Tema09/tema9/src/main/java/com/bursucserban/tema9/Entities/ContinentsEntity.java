@@ -13,7 +13,7 @@ import javax.persistence.*;
                 query = "select e from ContinentsEntity e where e.name = :name"),
 })
 
-public class ContinentsEntity
+public class ContinentsEntity extends AbstractEntity
 {
     @Basic
     @Id

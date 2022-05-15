@@ -12,7 +12,7 @@ import javax.persistence.*;
         @NamedQuery(name = "entities.CitiesEntity.findByName",
                 query = "select e from CitiesEntity e where e.name = :name"),
 })
-public class CitiesEntity
+public class CitiesEntity extends AbstractEntity
 {
     @Basic
     @Column(name = "id")
@@ -26,13 +26,33 @@ public class CitiesEntity
     private String name;
     @Basic
     @Column(name = "capital")
-    private Integer capital;
+    private String capital;
     @Basic
     @Column(name = "latitude")
     private Double latitude;
     @Basic
     @Column(name = "longitude")
     private Double longitude;
+
+    @Basic
+    @Column(name = "population")
+    private Integer population;
+
+    public CitiesEntity(int id, String country, String name, String capital, double latitude, double longitude, Integer population)
+    {
+        this.id=id;
+        this.country = country;
+        this.name = name;
+        this.capital =capital;
+        this. latitude = latitude;
+        this.longitude=longitude;
+        this.population=population;
+    }
+
+    public CitiesEntity()
+    {
+
+    }
 
     public Integer getId()
     {
@@ -64,12 +84,12 @@ public class CitiesEntity
         this.name = name;
     }
 
-    public Integer getCapital()
+    public String getCapital()
     {
         return capital;
     }
 
-    public void setCapital(Integer capital)
+    public void setCapital(String capital)
     {
         this.capital = capital;
     }
@@ -92,6 +112,11 @@ public class CitiesEntity
     public void setLongitude(Double longitude)
     {
         this.longitude = longitude;
+    }
+
+    public Integer getPopulation()
+    {
+        return population;
     }
 
     @Override

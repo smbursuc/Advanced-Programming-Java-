@@ -6,27 +6,22 @@ import com.bursucserban.tema9.Entities.ContinentsEntity;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class CityRepository
+public class CityRepository extends DataRepository
 {
     private EntityManager em;
 
     public CityRepository(EntityManager em)
     {
-        this.em = em;
-    }
-
-    public void create(CitiesEntity city)
-    {
-        em.persist(city);
-    }
-
-    public CitiesEntity findById(int id)
-    {
-        return em.find(CitiesEntity.class, id);
+        super(em);
     }
 
     public List<CitiesEntity> findByName(String name)
     {
         return em.createNamedQuery("entities.CitiesEntity.findByName", CitiesEntity.class).setParameter("name", name).getResultList();
+    }
+
+    public List<CitiesEntity> findAll()
+    {
+        return em.createNamedQuery("entities.CitiesEntity.findAll", CitiesEntity.class).getResultList();
     }
 }

@@ -4,7 +4,15 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "countries", schema = "public", catalog = "postgres")
-public class CountriesEntity
+@NamedQueries({
+        @NamedQuery(name = "entities.CountriesEntity.findAll",
+                query = "select e from CountriesEntity e order by e.name"),
+        @NamedQuery(name = "entities.CountriesEntity.findById",
+                query = "select e from CountriesEntity e where e.id = :id"),
+        @NamedQuery(name = "entities.CountriesEntity.findByName",
+                query = "select e from CountriesEntity e where e.name = :name"),
+})
+public class CountriesEntity extends AbstractEntity
 {
     @Basic
     @Column(name = "id")

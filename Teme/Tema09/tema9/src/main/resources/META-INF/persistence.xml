@@ -5,6 +5,7 @@
              version="2.2">
     <persistence-unit name="default">
 
+
         <class>com.bursucserban.tema9.Entities.CitiesEntity</class>
         <class>com.bursucserban.tema9.Entities.ContinentsEntity</class>
         <class>com.bursucserban.tema9.Entities.CountriesEntity</class>
@@ -13,6 +14,7 @@
             <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="eclipselink.jdbc.user" value="postgres"/>
             <property name="eclipselink.jdbc.password" value="password"/>
+            <property name="eclipselink.allow-zero-id" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

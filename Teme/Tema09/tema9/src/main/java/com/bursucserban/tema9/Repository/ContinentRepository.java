@@ -6,24 +6,14 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-public class ContinentRepository
+public class ContinentRepository extends DataRepository
 {
 
     private EntityManager em;
 
     public ContinentRepository(EntityManager em)
     {
-        this.em = em;
-    }
-
-    public void create(ContinentsEntity continent)
-    {
-        em.persist(continent);
-    }
-
-    public ContinentsEntity findById(int id)
-    {
-        return em.find(ContinentsEntity.class, id);
+        super(em);
     }
 
     public List<ContinentsEntity> findByName(String name)
