@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3334213-1773-41f1-a5fe-e2a4b8e516f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/ChocoSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/DataRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CitiesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CitiesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/ContinentsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/ContinentsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CountriesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Entities/CountriesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/ContinentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/ContinentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/java/com/bursucserban/tema9/Repository/CountryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/tema9/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29CazHcKOBVhk10O8Pgus1RITSx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="compulsory10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3334213-1773-41f1-a5fe-e2a4b8e516f9" name="Changes" comment="" />
+      <created>1652619785399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652619785399</updated>
+      <workItem from="1652619787482" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
