@@ -25,12 +25,13 @@ public class Client {
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 input = br.readLine();
 
-                if(input.equals("exit"))
-                    break;
-
                 out.println(input);
                 // Wait the response from the server ("Hello World!")
                 String response = in.readLine();
+                if(response.equals("quit"))
+                {
+                    break;
+                }
                 System.out.println(response);
             }
         } catch (UnknownHostException e) {
