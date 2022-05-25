@@ -61,7 +61,7 @@ public class Server {
             while (!close) {
                 System.out.println ("Waiting for a client ...");
                 Socket socket = serverSocket.accept();
-                socket.setSoTimeout(5000);
+                socket.setSoTimeout(120000000);
                 if(!stop)
                 {
                     ClientThread ct = new ClientThread(socket);

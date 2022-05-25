@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63352391-b556-4ffe-9a48-ba996f656480" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/DAO/FriendsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/DAO/UsersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/Entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab11/compulsory11/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab11/compulsory11/src/main/java/com/bursucserban/compulsory11/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab11/compulsory11/src/main/java/com/bursucserban/compulsory11/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab11/compulsory11/src/test/java/com/bursucserban/compulsory11/HelloControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bursucserban/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bursucserban/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../compulsory10server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../compulsory10server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/ClientThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../compulsory10server/src/main/java/org/bursucserban/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../compulsory10server/target/classes/org/bursucserban/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../compulsory10server/target/classes/org/bursucserban/ClientThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../compulsory10server/target/classes/org/bursucserban/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../compulsory10server/target/classes/org/bursucserban/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teme/Tema09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teme/Tema09/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/batik-1.14",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PA_Bursuc_Serban-Mihai_2E3/Teme/Tema09&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="org.bursucserban.Client" />
@@ -97,6 +93,10 @@
       <workItem from="1652620541761" duration="3930000" />
       <workItem from="1652720970188" duration="12539000" />
       <workItem from="1652808233030" duration="5995000" />
+      <workItem from="1652892957437" duration="358000" />
+      <workItem from="1652964627815" duration="2146000" />
+      <workItem from="1652968630449" duration="594000" />
+      <workItem from="1653455599109" duration="594000" />
     </task>
     <servers />
   </component>
